@@ -1,0 +1,63 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 52px;
+
+		@media (max-width: $mobile) {
+			padding-top: 22px;
+		}
+	}
+	&__logo {
+		white-space: nowrap;
+
+		span {
+			background: linear-gradient(90deg, #F9DBA2 0%, #FAE3B0 23.48%, #E8CFA0 36.23%, #F0D2A0 55.27%, #FAEDD1 78.09%, #F8E1B9 96.07%, #F8E1B9 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			font-size: 38px;
+			font-weight: 400;
+			font-family: $secondFontFamily;
+
+			@media (max-width: $mobileSmall) {
+				font-size: 12px;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		font-family: $secondFontFamily;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+
+		li:not(:last-child) {
+			margin-right: 48px;
+		}
+
+		a {
+			transition: all 0.5s;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+
+		@media (max-width: $mobileSmall) {
+			font-size: 10px;
+			line-height: 10px;
+			li:not(:last-child) {
+				margin-right: 19px;
+			}
+		}
+	}
+}

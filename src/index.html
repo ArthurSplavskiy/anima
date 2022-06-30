@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+		"title":"Anima"
+	})
+	<body>
+		@@include('html/_preloader-html.htm',{})
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page-content">
+				<!-- video -->
+				<div class="fullscreen-video">
+					<video data-video autoplay muted loop preload="auto" class="fullscreen-video__video">
+						<source type="video/webm" data-src="img/video/showreel-desktop.webm">
+						<source type="video/mp4" data-src="img/video/showreel-desktop.mp4">	
+					</video>
+					<div class="anchor">
+						<img src="img/arrow.svg" alt="To down">
+					</div>
+				</div>
+				<!-- video -->
+				<div class="scroll-content">
+					<img class="scroll-content__scalable-text" src="img/anima-films.svg" alt="">
+					<div class="scroll-content__hero">
+						<h1>ANIMA FILMS</h1>
+						<p>
+							Anima Films tells stories that catalyse change and amplify voices from the margins.
+							We’ve been creating content with a purpose for more than 15 years, including broadcast documentaries, short-form
+							branded
+							films and editorial, working with small, agile crews in far-flung locations. Our content combines journalistic
+							rigour
+							with a cinematic aesthetic and a sure instinct for story.
+						</p>
+						<a href="https://vimeo.com/692179513/be26084d38" target="_blank">recent work</a>
+					</div>
+					<div class="scroll-content__blur"></div>
+					<div class="scroll-content__blur"></div>
+					<div class="scroll-content__blur"></div>
+					<div class="scroll-content__blur"></div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_js.htm',{})
+		</div>
+	</body>
+</html>
